@@ -6,7 +6,10 @@ public class Destroy: MonoBehaviour
         ObjectSize objectSize = other.GetComponent<ObjectSize>();
         if (objectSize != null)
         {
-            // objectSize.score += objectSize.score;
+            if(Manager.instance!=null)
+            {
+                Manager.instance.AddScore(objectSize.score);
+            }
         }
         Destroy(other.gameObject);
     }
