@@ -15,8 +15,12 @@ public class Manager : MonoBehaviour
 
     private void Start()
     {
-        // Test thử: Load Level 1 ngay khi vào game
-        StartGame(1);
+    int levelToPlay = 2;
+    if (MasterData.instance != null)
+    {
+        levelToPlay = MasterData.instance.currentLevelIndex;
+    }
+    StartGame(levelToPlay);
     }
 
     public void StartGame(int levelIndex)
@@ -59,7 +63,13 @@ public class Manager : MonoBehaviour
         if (currentScore >= targetScore)
         {
             Debug.Log("LEVEL COMPLETED!");
-            // Gọi hàm Next Level hoặc hiện UI thắng ở đây
+            
+            if (MasterData.instance != null)
+            {
+                // Mở khóa level tiếp theo
+                MasterData.instance.UnlockNextLevel(MasterData.instance.currentLevelIndex + 1);
+            }
+             // Hiện UI thắng / Về lại Home
         }
     }
 }

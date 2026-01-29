@@ -2238,7 +2238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 278060993}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UILevelButton, Assembly-CSharp
         m_MethodName: OnLevelButtonClicked
         m_Mode: 1
@@ -2297,9 +2297,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 278060988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7000f6f18ccc2488f06958cdc0e227, type: 3}
+  m_Script: {fileID: 11500000, guid: a808e1ab85fa25741bf179a121e3d336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelIndex: 5
+  levelText: {fileID: 0}
+  myButton: {fileID: 278060990}
 --- !u!1 &329199120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3459,7 @@ GameObject:
   - component: {fileID: 450869338}
   - component: {fileID: 450869339}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6114,6 +6117,7 @@ GameObject:
   - component: {fileID: 842314651}
   - component: {fileID: 842314650}
   - component: {fileID: 842314649}
+  - component: {fileID: 842314652}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -6235,6 +6239,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842314647}
   m_CullTransparentMesh: 1
+--- !u!114 &842314652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842314647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a808e1ab85fa25741bf179a121e3d336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 1
+  levelText: {fileID: 0}
+  myButton: {fileID: 842314649}
 --- !u!1 &897908862
 GameObject:
   m_ObjectHideFlags: 0
@@ -9359,7 +9378,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1392086355}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UILevelButton, Assembly-CSharp
         m_MethodName: OnLevelButtonClicked
         m_Mode: 1
@@ -9418,9 +9437,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1392086350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7000f6f18ccc2488f06958cdc0e227, type: 3}
+  m_Script: {fileID: 11500000, guid: a808e1ab85fa25741bf179a121e3d336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelIndex: 4
+  levelText: {fileID: 0}
+  myButton: {fileID: 1392086352}
 --- !u!1 &1425424900
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,6 +10441,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7000f6f18ccc2488f06958cdc0e227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1524381639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524381641}
+  - component: {fileID: 1524381640}
+  m_Layer: 0
+  m_Name: MasterDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1524381640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524381639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acc3483e55dc224fbc42a1c73712406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevelIndex: 1
+  unlockedLevel: 1
+--- !u!4 &1524381641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524381639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529712467
 GameObject:
   m_ObjectHideFlags: 0
@@ -10503,7 +10571,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1529712472}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UILevelButton, Assembly-CSharp
         m_MethodName: OnLevelButtonClicked
         m_Mode: 1
@@ -10562,9 +10630,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529712467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7000f6f18ccc2488f06958cdc0e227, type: 3}
+  m_Script: {fileID: 11500000, guid: a808e1ab85fa25741bf179a121e3d336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelIndex: 3
+  levelText: {fileID: 0}
+  myButton: {fileID: 1529712469}
 --- !u!1 &1533232096
 GameObject:
   m_ObjectHideFlags: 0
@@ -12884,6 +12955,7 @@ GameObject:
   - component: {fileID: 1729231611}
   - component: {fileID: 1729231610}
   - component: {fileID: 1729231609}
+  - component: {fileID: 1729231612}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -12955,9 +13027,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UILevelButton, Assembly-CSharp
-        m_MethodName: OnLevelButtonClicked
+      - m_Target: {fileID: 450869338}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadSceneGamePlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13005,6 +13077,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729231607}
   m_CullTransparentMesh: 1
+--- !u!114 &1729231612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729231607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a808e1ab85fa25741bf179a121e3d336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 2
+  levelText: {fileID: 0}
+  myButton: {fileID: 1729231609}
 --- !u!1 &1743393400
 GameObject:
   m_ObjectHideFlags: 0
@@ -15784,3 +15871,4 @@ SceneRoots:
   - {fileID: 774256489}
   - {fileID: 450869337}
   - {fileID: 451010458}
+  - {fileID: 1524381641}
