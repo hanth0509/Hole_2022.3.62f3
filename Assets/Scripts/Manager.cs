@@ -15,7 +15,7 @@ public class Manager : MonoBehaviour
 
     private void Start()
     {
-    int levelToPlay = 2;
+    int levelToPlay = 1;
     if (MasterData.instance != null)
     {
         levelToPlay = MasterData.instance.currentLevelIndex;
@@ -27,7 +27,7 @@ public class Manager : MonoBehaviour
     {
         // Reset điểm số
         currentScore = 0;
-        nextGrowthThreshold = 50;
+        nextGrowthThreshold = 100;
         
         // Gọi máy sinh level làm việc
         if (levelGenerator != null)
@@ -53,7 +53,7 @@ public class Manager : MonoBehaviour
         // --- KIỂM TRA TIẾN HÓA ---
         {
             // Tăng mốc tiếp theo lên (50 -> 100 -> 150...)
-            nextGrowthThreshold += 50;
+            nextGrowthThreshold += 100;
             
             // Gọi Hole to lên
             if (holeScript != null)
