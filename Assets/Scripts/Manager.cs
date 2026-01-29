@@ -48,8 +48,9 @@ public class Manager : MonoBehaviour
     public void AddScore(int amount)
     {
         currentScore += amount;
-        Debug.Log("Điểm: " + currentScore + "/" + targetScore);
-         if (currentScore >= nextGrowthThreshold)
+        Debug.Log("Ăn được " + amount + " điểm. Tổng: " + currentScore + " / " + targetScore);
+        
+        // --- KIỂM TRA TIẾN HÓA ---
         {
             // Tăng mốc tiếp theo lên (50 -> 100 -> 150...)
             nextGrowthThreshold += 50;

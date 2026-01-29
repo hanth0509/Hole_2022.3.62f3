@@ -16,25 +16,41 @@ public class LevelGenerator : MonoBehaviour
         }
 
         LevelData currentLevel = JsonUtility.FromJson<LevelData>(jsonFile.text);
+
         if (Manager.instance != null)
         {
             Manager.instance.SetupLevelInfo(currentLevel);
         }
-        
+
+        // Xóa hết vật thể cũ (nếu có) trước khi tạo mới
+        // (Code xóa cũ ở đây nếu cần, nhưng chuyển cảnh thì tự xóa rồi)
+
         foreach (var group in currentLevel.groups)
         {
-            foreach (var pos in group.positions)
+            // Code cũ: dùng group.positions
+            // foreach (var pos in group.positions) { SpawnObject(pos); }
+
+            // Code mới: dùng group.objects
+            foreach (var objData in group.objects)
             {
-                SpawnObject(pos);
+                SpawnObject(objData.position, objData.prefabIndex);
             }
         }
     }
 
-    void SpawnObject(Vector3 position)
+    // Cập nhật hàm Spawn nhận thêm index
+    void SpawnObject(Vector3 position, int prefabIndex)
     {
-        if (objectPrefabs.Count > 0)
+        if (objectPrefabs != null && objectPrefabs.Count > 0)
         {
-            GameObject prefab = objectPrefabs[Random.Range(0, objectPrefabs.Count)];
+            // Kiểm tra index có hợp lệ không (tránh lỗi Array Out Of Bounds)
+            int index = prefabIndex;
+            if (index < 0 || index >= objectPrefabs.Count)
+            {
+                index = 0; // Fallback về 0 nếu lỗi
+            }
+
+            GameObject prefab = objectPrefabs[index];
             Instantiate(prefab, position, Quaternion.identity, transform);
         }
     }

@@ -34,8 +34,18 @@ public class Hole : MonoBehaviour
         // --- UP SIZE ---
     public void ScaleUp()
     {
-        // Tăng 20%
-        transform.localScale *= 1.2f;
-        Debug.Log("Hole đã to lên!");
+        // Giới hạn độ to tối đa (Ví dụ: 3.0f)
+        float maxScale = 3.0f;
+        
+        if (transform.localScale.x < maxScale)
+        {
+            // Tăng 20%
+            transform.localScale *= 1.2f;
+            Debug.Log("Hole đã to lên! Size: " + transform.localScale);
+        }
+        else
+        {
+             Debug.Log("Hole đã to hết cỡ rồi!");
+        }
     }
 }

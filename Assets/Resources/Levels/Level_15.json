@@ -1,218 +1,504 @@
 {
     "levelIndex": 15,
-    "targetScore": 300,
+    "targetScore": 450,
     "moveLimit": 45,
     "levelType": "MIXED",
     "groups": [
         {
             "groupName": "Group_0",
-            "shapeType": "SQUARE",
-            "positions": [
+            "shapeType": "DIAMOND",
+            "objects": [
                 {
-                    "x": -3.75,
-                    "y": 0.5,
-                    "z": -3.75
+                    "position": {
+                        "x": -19.5,
+                        "y": 0.5,
+                        "z": 0.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -3.75,
-                    "y": 0.5,
-                    "z": -2.25
+                    "position": {
+                        "x": -18.0,
+                        "y": 0.5,
+                        "z": -1.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -3.75,
-                    "y": 0.5,
-                    "z": -0.75
+                    "position": {
+                        "x": -18.0,
+                        "y": 0.5,
+                        "z": 0.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -3.75,
-                    "y": 0.5,
-                    "z": 0.75
+                    "position": {
+                        "x": -18.0,
+                        "y": 0.5,
+                        "z": 1.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -3.75,
-                    "y": 0.5,
-                    "z": 2.25
+                    "position": {
+                        "x": -16.5,
+                        "y": 0.5,
+                        "z": -3.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -2.25,
-                    "y": 0.5,
-                    "z": -3.75
+                    "position": {
+                        "x": -16.5,
+                        "y": 0.5,
+                        "z": -1.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -2.25,
-                    "y": 0.5,
-                    "z": -2.25
+                    "position": {
+                        "x": -16.5,
+                        "y": 0.5,
+                        "z": 0.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -2.25,
-                    "y": 0.5,
-                    "z": -0.75
+                    "position": {
+                        "x": -16.5,
+                        "y": 0.5,
+                        "z": 1.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -2.25,
-                    "y": 0.5,
-                    "z": 0.75
+                    "position": {
+                        "x": -16.5,
+                        "y": 0.5,
+                        "z": 3.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -2.25,
-                    "y": 0.5,
-                    "z": 2.25
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": -4.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -0.75,
-                    "y": 0.5,
-                    "z": -3.75
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": -3.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -0.75,
-                    "y": 0.5,
-                    "z": -2.25
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": -1.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -0.75,
-                    "y": 0.5,
-                    "z": -0.75
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": 0.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": -0.75,
-                    "y": 0.5,
-                    "z": 0.75
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": 1.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": -0.75,
-                    "y": 0.5,
-                    "z": 2.25
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": 3.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 0.75,
-                    "y": 0.5,
-                    "z": -3.75
+                    "position": {
+                        "x": -15.0,
+                        "y": 0.5,
+                        "z": 4.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 0.75,
-                    "y": 0.5,
-                    "z": -2.25
+                    "position": {
+                        "x": -13.5,
+                        "y": 0.5,
+                        "z": -3.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 0.75,
-                    "y": 0.5,
-                    "z": -0.75
+                    "position": {
+                        "x": -13.5,
+                        "y": 0.5,
+                        "z": -1.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 0.75,
-                    "y": 0.5,
-                    "z": 0.75
+                    "position": {
+                        "x": -13.5,
+                        "y": 0.5,
+                        "z": 0.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 0.75,
-                    "y": 0.5,
-                    "z": 2.25
+                    "position": {
+                        "x": -13.5,
+                        "y": 0.5,
+                        "z": 1.5
+                    },
+                    "prefabIndex": 0
                 }
             ]
         },
         {
             "groupName": "Group_1",
             "shapeType": "TRIANGLE",
-            "positions": [
+            "objects": [
                 {
-                    "x": 15.0,
-                    "y": 0.5,
-                    "z": 0.0
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.5,
+                        "z": 0.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 14.25,
-                    "y": 0.5,
-                    "z": -1.5
+                    "position": {
+                        "x": -0.75,
+                        "y": 0.5,
+                        "z": -1.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 15.75,
-                    "y": 0.5,
-                    "z": -1.5
+                    "position": {
+                        "x": 0.75,
+                        "y": 0.5,
+                        "z": -1.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 13.5,
-                    "y": 0.5,
-                    "z": -3.0
+                    "position": {
+                        "x": -1.5,
+                        "y": 0.5,
+                        "z": -3.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 15.0,
-                    "y": 0.5,
-                    "z": -3.0
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.5,
+                        "z": -3.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 16.5,
-                    "y": 0.5,
-                    "z": -3.0
+                    "position": {
+                        "x": 1.5,
+                        "y": 0.5,
+                        "z": -3.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 12.75,
-                    "y": 0.5,
-                    "z": -4.5
+                    "position": {
+                        "x": -2.25,
+                        "y": 0.5,
+                        "z": -4.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 14.25,
-                    "y": 0.5,
-                    "z": -4.5
+                    "position": {
+                        "x": -0.75,
+                        "y": 0.5,
+                        "z": -4.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 15.75,
-                    "y": 0.5,
-                    "z": -4.5
+                    "position": {
+                        "x": 0.75,
+                        "y": 0.5,
+                        "z": -4.5
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 17.25,
-                    "y": 0.5,
-                    "z": -4.5
+                    "position": {
+                        "x": 2.25,
+                        "y": 0.5,
+                        "z": -4.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 12.0,
-                    "y": 0.5,
-                    "z": -6.0
+                    "position": {
+                        "x": -3.0,
+                        "y": 0.5,
+                        "z": -6.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 13.5,
-                    "y": 0.5,
-                    "z": -6.0
+                    "position": {
+                        "x": -1.5,
+                        "y": 0.5,
+                        "z": -6.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 15.0,
-                    "y": 0.5,
-                    "z": -6.0
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.5,
+                        "z": -6.0
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 16.5,
-                    "y": 0.5,
-                    "z": -6.0
+                    "position": {
+                        "x": 1.5,
+                        "y": 0.5,
+                        "z": -6.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 18.0,
-                    "y": 0.5,
-                    "z": -6.0
+                    "position": {
+                        "x": 3.0,
+                        "y": 0.5,
+                        "z": -6.0
+                    },
+                    "prefabIndex": 0
                 },
                 {
-                    "x": 11.25,
-                    "y": 0.5,
-                    "z": -7.5
+                    "position": {
+                        "x": -3.75,
+                        "y": 0.5,
+                        "z": -7.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 12.75,
-                    "y": 0.5,
-                    "z": -7.5
+                    "position": {
+                        "x": -2.25,
+                        "y": 0.5,
+                        "z": -7.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 14.25,
-                    "y": 0.5,
-                    "z": -7.5
+                    "position": {
+                        "x": -0.75,
+                        "y": 0.5,
+                        "z": -7.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 15.75,
-                    "y": 0.5,
-                    "z": -7.5
+                    "position": {
+                        "x": 0.75,
+                        "y": 0.5,
+                        "z": -7.5
+                    },
+                    "prefabIndex": 1
                 },
                 {
-                    "x": 17.25,
-                    "y": 0.5,
-                    "z": -7.5
+                    "position": {
+                        "x": 2.25,
+                        "y": 0.5,
+                        "z": -7.5
+                    },
+                    "prefabIndex": 0
+                }
+            ]
+        },
+        {
+            "groupName": "Group_2",
+            "shapeType": "SQUARE",
+            "objects": [
+                {
+                    "position": {
+                        "x": 11.25,
+                        "y": 0.5,
+                        "z": -3.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 11.25,
+                        "y": 0.5,
+                        "z": -2.25
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 11.25,
+                        "y": 0.5,
+                        "z": -0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 11.25,
+                        "y": 0.5,
+                        "z": 0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 11.25,
+                        "y": 0.5,
+                        "z": 2.25
+                    },
+                    "prefabIndex": 0
+                },
+                {
+                    "position": {
+                        "x": 12.75,
+                        "y": 0.5,
+                        "z": -3.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 12.75,
+                        "y": 0.5,
+                        "z": -2.25
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 12.75,
+                        "y": 0.5,
+                        "z": -0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 12.75,
+                        "y": 0.5,
+                        "z": 0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 12.75,
+                        "y": 0.5,
+                        "z": 2.25
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 14.25,
+                        "y": 0.5,
+                        "z": -3.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 14.25,
+                        "y": 0.5,
+                        "z": -2.25
+                    },
+                    "prefabIndex": 0
+                },
+                {
+                    "position": {
+                        "x": 14.25,
+                        "y": 0.5,
+                        "z": -0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 14.25,
+                        "y": 0.5,
+                        "z": 0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 14.25,
+                        "y": 0.5,
+                        "z": 2.25
+                    },
+                    "prefabIndex": 0
+                },
+                {
+                    "position": {
+                        "x": 15.75,
+                        "y": 0.5,
+                        "z": -3.75
+                    },
+                    "prefabIndex": 0
+                },
+                {
+                    "position": {
+                        "x": 15.75,
+                        "y": 0.5,
+                        "z": -2.25
+                    },
+                    "prefabIndex": 0
+                },
+                {
+                    "position": {
+                        "x": 15.75,
+                        "y": 0.5,
+                        "z": -0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 15.75,
+                        "y": 0.5,
+                        "z": 0.75
+                    },
+                    "prefabIndex": 1
+                },
+                {
+                    "position": {
+                        "x": 15.75,
+                        "y": 0.5,
+                        "z": 2.25
+                    },
+                    "prefabIndex": 1
                 }
             ]
         }
