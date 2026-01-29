@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGenerator: {fileID: 1803540847}
+  holeScript: {fileID: 1300860708}
   currentScore: 0
   targetScore: 0
 --- !u!1 &1300860703

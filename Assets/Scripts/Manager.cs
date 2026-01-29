@@ -4,10 +4,10 @@ public class Manager : MonoBehaviour
 {
     public static Manager instance; // Singleton để dễ gọi từ nơi khác
     public LevelGenerator levelGenerator; // Tham chiếu đến máy sinh level
-
+    public Hole holeScript;
     public int currentScore = 0;
     public int targetScore = 0;
-
+    private int nextGrowthThreshold = 50; 
     private void Awake()
     {
         instance = this;
@@ -23,6 +23,7 @@ public class Manager : MonoBehaviour
     {
         // Reset điểm số
         currentScore = 0;
+        nextGrowthThreshold = 50;
         
         // Gọi máy sinh level làm việc
         if (levelGenerator != null)
@@ -44,7 +45,17 @@ public class Manager : MonoBehaviour
     {
         currentScore += amount;
         Debug.Log("Điểm: " + currentScore + "/" + targetScore);
-        
+         if (currentScore >= nextGrowthThreshold)
+        {
+            // Tăng mốc tiếp theo lên (50 -> 100 -> 150...)
+            nextGrowthThreshold += 50;
+            
+            // Gọi Hole to lên
+            if (holeScript != null)
+            {
+                holeScript.ScaleUp();
+            }
+        }
         if (currentScore >= targetScore)
         {
             Debug.Log("LEVEL COMPLETED!");

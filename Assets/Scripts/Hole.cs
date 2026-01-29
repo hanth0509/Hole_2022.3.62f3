@@ -31,4 +31,11 @@ public class Hole : MonoBehaviour
     {
         controls.Hole.Disable();
     }
+        // --- UP SIZE ---
+    public void ScaleUp()
+    {
+        // Tăng 20%
+        transform.localScale *= 1.2f;
+        Debug.Log("Hole đã to lên!");
+    }
 }
